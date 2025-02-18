@@ -4,7 +4,7 @@
  */
 
 import { useDrag } from "@use-gesture/react";
-import { IFContentSpring } from "./useDtEngine";
+import { IFContentSpring } from "./useDTEngine";
 
 interface IGestureBindings {
   contentSpring: IFContentSpring;

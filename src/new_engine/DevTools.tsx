@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ExpandIcon, LocateIcon, MinusIcon, PlusIcon } from "lucide-react";
-import { IFDTActions } from "./useDtEngine";
+import { IFDTActions } from "./useDTEngine";
 import { useDTConfig } from "./useDTConfig";
 
 interface IFProps {
@@ -13,12 +13,16 @@ export const DevTools = ({ actions }: IFProps) => {
 
   return (
     <div className="flex flex-col z-10 bg-blue-500 p-4 rounded-lg gap-2 justify-center absolute top-2 left-2">
-      <Button variant="default" onClick={actions.recenter}>
+      <Button variant="default" onClick={() => actions.recenter()}>
         <LocateIcon />
         Recenter
       </Button>
       <div className="flex gap-2">
-        <Button variant="default" className="grow" onClick={actions.extents}>
+        <Button
+          variant="default"
+          className="grow"
+          onClick={() => actions.extents()}
+        >
           <ExpandIcon />
           Extents
         </Button>
@@ -34,7 +38,11 @@ export const DevTools = ({ actions }: IFProps) => {
         />
       </div>
       <div className="flex gap-2">
-        <Button variant="default" className="grow" onClick={actions.zoomIn}>
+        <Button
+          variant="default"
+          className="grow"
+          onClick={() => actions.zoomIn()}
+        >
           <PlusIcon />
           Zoom In
         </Button>
@@ -50,7 +58,11 @@ export const DevTools = ({ actions }: IFProps) => {
         />
       </div>
       <div className="flex gap-2">
-        <Button variant="default" className="grow" onClick={actions.zoomOut}>
+        <Button
+          variant="default"
+          className="grow"
+          onClick={() => actions.zoomOut()}
+        >
           <MinusIcon />
           Zoom Out
         </Button>

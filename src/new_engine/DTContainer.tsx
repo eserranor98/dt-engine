@@ -1,6 +1,6 @@
 import { animated } from "@react-spring/web";
 import { forwardRef, ReactNode } from "react";
-import { IFContentSpring } from "./useDtEngine";
+import { IFContentSpring } from "./useDTEngine";
 import { useGestureBindings } from "./useGestureBindings";
 
 export interface IFContainerProps {

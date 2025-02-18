@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { IFDTEngineConfig } from "./useDtEngine";
+import { IFDTEngineConfig } from "./useDTEngine";
 
 interface IFState {
   config: IFDTEngineConfig;

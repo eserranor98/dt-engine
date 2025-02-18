@@ -1,4 +1,4 @@
-import { IFContentSpring } from "./useDtEngine";
+import { IFContentSpring } from "./useDTEngine";
 
 interface IFDimensions {
   width: number;

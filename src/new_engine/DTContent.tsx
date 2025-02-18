@@ -1,6 +1,6 @@
 import { animated } from "@react-spring/web";
 import { ReactNode } from "react";
-import { IFContentSpring } from "./useDtEngine";
+import { IFContentSpring } from "./useDTEngine";
 
 interface IFProps {
   contentSpring: IFContentSpring[0];

@@ -1,12 +1,12 @@
 import { useSpring } from "@react-spring/web";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { AssetMapper, AssetMapperProps } from "./AssetMapper";
 import { DevTools } from "./DevTools";
 import { DTContainer } from "./DTContainer";
 import { DTContent } from "./DTContent";
-import { IFDTEngineConfig, useDTEngine } from "./useDtEngine";
-import useResizeObserver from "./useResizeObserver";
+import { IFDTEngineConfig, useDTEngine } from "./useDTEngine";
 import { useDTReady } from "./useDTReady";
+import useResizeObserver from "./useResizeObserver";
 
 interface IFProps {
   contentProps: Omit<AssetMapperProps, "onReady">;
